@@ -1,0 +1,36 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h3{
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.form{
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin-left: 45%;
+}
+
+.btn1{
+  background-color: red;
+  color: white;
+  font-size: 2.5vh;
+  margin-left: 5vh;
+  border: 2px solid black;
+  border-radius: 2px;
+}
+
+.btn2{
+  color: white;
+  background-color: green;
+  font-size: 2.5vh;
+  margin-left: 5vh;
+  border: 2px solid black;
+  border-radius: 2px;
+}

@@ -1,0 +1,77 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Form
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Form</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <form action="conexao.php" class="form" method="post">
+      <h3>Nome:</h3>
+      <input type="text" name="Nome" placeholder="Digite seu Nome" required>
+      <br><br>
+
+      <h3>Sobrenome:</h3>
+      <input type="text" name="Sobrenome" placeholder="Digite seu Sobrenome" required>
+      <br><br>
+
+      <h3>E-mail:</h3>
+      <input type="text" name="Email" placeholder="Digite seu Email" required>
+      <br><br>
+
+      <h3>Endereço:</h3>
+      <input type="text" name="Endereco" placeholder="Digite seu Endereço" required>
+      <br><br>
+
+      <h3>Nascimento</h3>
+      <input type="text" name="Nasc" placeholder="Digite seu Nascimento" required>
+      <br><br>
+
+      <h3>Genêro:</h3>
+      <select name="Genero" required>
+        <option value="Default" selected>Selecione uma opção</option>
+        <option value="Masculino">Masculino</option>
+        <option value="Feminino">Feminino</option>
+        <option value="Outro">Prefiro não responder</option>
+      </select>
+      <br><br>
+
+      <h3>Interesses:</h3>
+      <input type="checkbox" name="Cinema" required><label>Cinema</label>
+      <br>
+      <input type="checkbox" name="Literatura" required><label>Livros</label>
+      <br>
+      <input type="checkbox" name="TV" required><label>Televisão</label>
+      <br>
+      <input type="checkbox" name="Games" required><label>Jogos</label>
+      <br>
+      <input type="checkbox" name="HQs" required><label>Quadrinhos</label>
+      <br>
+      <input type="checkbox" name="Teatro" required><label>Teatro</label>
+      <br><br>
+
+      <h3>Senha:</h3>
+      <input type="password" name="senha1" placeholder="Digite sua senha" required>
+      <br><br>
+
+      <h3>Confirmar Senha:</h3>
+      <input type="password" name="senha2" placeholder="Confirme sua senha" required>
+      <br><br>
+
+      <button type="reset" class="btn1">Limpar</button>
+      <br>
+
+      <button type="button" class="btn2" (click)="enviarParaConfirmado()">
+        Enviar
+      </button> <!-- Botão não envia, Action = "NomeDaFunção do TS" -->
+    </form>
+  </div>
+</ion-content>
